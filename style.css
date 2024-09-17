@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(78, 135, 226)
+}
+
+header {
+    background-color: #1B999B;
+    height: 7vh;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    height: 83vh;
+
+    display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+        
+
+    .container-information {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+
+        .box-imagenes {
+            background-image: url(Recursos/RecursosEmpresa/FotoPortada1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 20vh;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            
+
+            .perfil {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -50px;
+            }
+        }
+        .box-detalles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
+
+
+
+    .box-botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+
+        .btns-SocialMedia {
+            width: 80vw;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                flex-direction: column;
+
+                img {
+                    width: 40px;
+                    border-radius: 50%;
+                }
+
+                img:hover {
+                    box-shadow: 0 1px 6px 0 #000000;
+                    transition-duration: 0.6s;
+                }
+            }
+
+
+
+
+        }
+
+        .btns-CTA {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            button {
+                border: 1px solid #1B999B;
+                color: #1B999B;
+                border-radius: 15px;
+                padding: 10px;
+                width: 90vw;
+                max-width: 800px;
+            }
+
+            button:hover {
+                background-color: #1B999B;
+                color: white;
+                transition-duration: 0.6s;
+
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #212529;
+
+
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+
+    .btn {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+
+        img {
+            background-color: #34393E;
+            padding: 5px;
+            border-radius: 50%;
+            width: 20px;
+
+            fill: white;
+        }
+
+        img:hover {
+            background-color: white;
+            color: #34393E;
+
+            transition-duration: 0.6s;
+        }
+    }
+
+    .btnQr {
+        margin-bottom: 30px;
+
+        img {
+            width: 40px;
+            padding: 10px;
+            background-color: #1B999B;
+            fill: white !important;
+        }
+
+    }
+
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+}
+
+.btn {
+    border: none;
+    padding: 5px;
+
+
+}
