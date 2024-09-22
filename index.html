@@ -7,11 +7,13 @@
 
     <link rel="stylesheet" href="style.css">
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
     <header>
-        <img src="Recursos/Recursos/Iconos/MenuBar.svg" alt="">
+        
+        
     </header>
     <main>
         <div class="container-information">
@@ -48,27 +50,99 @@
                 </button>
             </div>
         </div> 
+
+    <!-- modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-text"></p>
+
+                <div class="modal-content-perfil modals">
+                    <img src="Recursos/RecursosEmpresa/FotoPerfil.jpg" alt="qr">
+                    <h3>VakevaTours</h3>
+                    <h6>Mis recursos</h6>
+                    
+                    <button class="btn"> 
+                        <span class="material-symbols-outlined">
+                            play_circle
+                            </span>
+                        <p>Videos</p>
+                    </button>
+                    <button class="btn"> 
+                        <span class="material-symbols-outlined">
+                            filter_1
+                            </span>
+                        <p>Imagenes</p>
+                    </button>
+                    <button class="btn"> 
+                        <span class="material-symbols-outlined">
+                            tab
+                            </span>
+                        <p>Documentos</p>
+                    </button>
+                </div>
+
+                <div class="modal-content-escanear">
+                    <img src="Recursos/RecursosEmpresa/BotonesFooter/Qr.png" alt="qr">
+                    <p>Apunta tu cámara al código QR</p>
+                    <button>
+                        <span class="material-symbols-outlined"> download </span>
+                        <p>Descargar</p>
+                    </button>
+                </div>
+
+                <div class="modal-content-compartir modals" >
+                    <img src="Recursos/RecursosEmpresa/FotoPerfil.jpg" alt="qr">
+                    <h3>VakevaTours</h3>
+                    <h6>Mis recursos</h6>
+                    
+                    <button class="btn"> 
+                        <span class="material-symbols-outlined">
+                            play_circle
+                            </span>
+                        <p>Videos</p>
+                    </button>
+                    <button class="btn"> 
+                        <span class="material-symbols-outlined">
+                            filter_1
+                            </span>
+                        <p>Imagenes</p>
+                    </button>
+                    <button class="btn"> 
+                        <span class="material-symbols-outlined">
+                            tab
+                            </span>
+                        <p>Documentos</p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+
     </main>
+
     <footer>
-        <button class="btn">
-            
+        <button class="btn" id="btn1" data-target="content1">
             <img src="Recursos/Recursos/Iconos/user.svg" alt="">
             <span>Perfil</span>
-        
         </button>
-        <button class="btn">
+
+        <button class="btn " id="btn2" data-target="content2">
             <img src="Recursos/Recursos/Iconos/share.svg" alt="">
             <span>Compartir</span>
         </button>
-        <button class="btn btnQr">
+
+        <button class=" btn btnQr" id="btn3" data-target="content3" >
             <img src="Recursos/Recursos/Iconos/qr.svg" alt="">
             <span>Escanear</span>
         </button>
-        <button class="btn">
+        <button class="btn " id="btn4"data-target="content4">
             <img src="Recursos/Recursos/Iconos/location.svg" alt="">
             <span>Ubicación</span>
         </button>
-        <button class="btn">
+        <button class="btn " id="btn5" data-target="content5">
             <img src="Recursos/Recursos/Iconos/money.svg" alt="">
             <span>Pagos</span>
         </button>
