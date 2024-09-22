@@ -1,6 +1,9 @@
 const modal = document.getElementById('modal');
 const span = document.getElementsByClassName("close")[0];
 const modalText = document.getElementById('modal-text');
+const contact = document.querySelector("#btn-contact")
+
+
 
 span.onclick = function() {
   modal.style.display = "none";
@@ -80,3 +83,29 @@ btn5.onclick = function() {
 }
 
 
+const closeBtn = document.querySelector('.close-btn');
+
+
+
+// Función para abrir el menú
+function openNav() {
+  document.getElementById("sidebar").style.width = "40vw";
+  document.getElementById("menuOverlay").style.display = "block";
+}
+
+// Función para cerrar el menú
+function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+  document.getElementById("menuOverlay").style.display = "none";
+}
+
+// Función para cerrar el menú al hacer clic fuera de este
+document.getElementById("menuOverlay").addEventListener("click", function() {
+  closeNav();
+});
+
+closeBtn.addEventListener('click', () => {
+  closeNav()
+});
+
+contact,addEventListener()

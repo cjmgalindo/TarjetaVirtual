@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nameEmpresa</title>
 
     <link rel="stylesheet" href="style.css">
     
@@ -13,6 +13,22 @@
 <body>
     <header>
         
+        <div id="menuOverlay" class="overlay"></div>
+    
+        <div id="sidebar" class="sidebar">
+            <button class="close-btn">&times;</button>
+
+            <div class="content-sidebar">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore labore saepe in illo aspernatur non, optio ipsam odit nihil praesentium ea accusamus quasi ullam dignissimos. Animi consectetur repudiandae tenetur quo?
+                    Totam neque facere nulla iste, consequatur alias eaque aperiam eum dicta perspiciatis doloremque asperiores magnam dignissimos corporis dolorem, voluptatibus aspernatur facilis fugiat nemo obcaecati, iure ad quia. Fuga, culpa consequatur?
+                    Harum dolore ut ratione inventore voluptas, tempora commodi veniam eos itaque dolorum ab repudiandae explicabo nobis eveniet, dolores modi qui quam vero. Unde error eveniet, alias numquam maxime fuga porro!
+                    Dolore quidem facilis laborum molestias. Impedit earum blanditiis modi doloremque, placeat quibusdam inventore adipisci iure voluptate molestiae autem, perspiciatis animi sequi? Assumenda amet iure quasi tempora velit quia quam quaerat?
+                </p>
+            </div>
+        </div>
+    
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
         
     </header>
     <main>
@@ -41,10 +57,10 @@
                 </button>    
             </div>
             <div class="btns-CTA">
-                <button>
+                <button id="btn-contact" onclick="openNav()">
                     Contactanos
                 </button>
-                <button>
+                 <button>
     
                     Ir a mi tienda
                 </button>
